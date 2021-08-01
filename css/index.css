@@ -1,0 +1,123 @@
+:root {
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white:hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+@font-face {
+    font-family: 'lexend deca';
+    src: url(/3-Column-Preview-Card/Fonts/LexendDeca-Regular.ttf);
+    font-family: 'Big Shoulders Display';
+    src: url(/3-Column-Preview-Card/Fonts/BigShouldersDisplay-Bold.ttf);
+}
+
+@media (max-width: 400px) {
+    .main {
+        flex-direction: column;
+        margin: auto auto 50px 20px;
+    }
+
+    section:first-child {
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.box1 {
+    background:var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.box__link1{
+    color: var(--Bright-orange);
+}
+.box__link2{
+    color: var(--Dark-cyan);
+}
+.box__link3{
+    color: var(--Very-dark-cyan);
+}
+.box2 {
+    background:var(--Dark-cyan);
+}
+.box3 {
+    background:var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media  (max-width: 400px) {
+    .box3 {
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+}
+
+.box2 img{
+    margin-left: 10px;
+}
+.box3 img{
+    margin-left: 10px;
+}
+
+.main h1{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+}
+.main__box{
+    width: 180px;
+    height: 405px;
+    padding: 50px;
+    padding-right: 100px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 400px){
+    .main__box {
+        height: 400px;
+    }
+}
+.box__p{
+    font-family: 'lexend deca', sans-serif;
+    color: var(--Transparent-white);
+    font-size: 0.9rem;
+    font-weight: 400 ;
+    line-height: 30px;
+    width: 200px;
+    margin-bottom: 75px;
+}
+
+@media (max-width: 400px){
+        
+        .box__p {
+        margin-bottom: 40px;
+        width: 220px;
+    }
+}
+.main__box a{
+    text-decoration: none;
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family:'lexend deca', sans-serif;
+    padding: 15px 40px;
+}
+
+.box__links:hover{
+    background: transparent;
+    border: 2px solid var(--Transparent-white);
+    color: var(--Very-light-gray);
+}
